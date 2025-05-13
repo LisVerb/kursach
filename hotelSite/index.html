@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanc Atlantique Hotel site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=EB+Garamond&family=Josefin+Slab:wght@600&family=Marck+Script&family=Prompt:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link href="./styles/header.css" rel="stylesheet" />
+    <link href="./styles/apartaments.css" rel="stylesheet" />
+    <link href="./styles/about.css" rel="stylesheet" />
+    <link href="./styles/services.css" rel="stylesheet" />
+    <link href="./styles/footer.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="navigationPanel">
+        <a href="index.html">
+            <img class="dolphinImg" src="./img/dolphins.png" alt="Logo">
+        </a>
+
+
+        <!-- кнопка-бургер -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- навигация -->
+        <nav class="headerLinks" id="nav-menu">
+            <a href="./index.html">HOME</a>
+            <a href="./breakfast.html">BREAKFAST</a>
+            <a href="./index.html#rooms">ROOMS</a>
+            <a href="profile.html">PROFILE</a>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <img id="theme-icon" src="./img/header/sun.png" alt="Light mode">
+        </button>
+    </div>
+    <header class="header">
+
+        <div class="slider" id="slider">
+            <img class="slide" data-light="./img/banner.png" data-dark="./img/dark_banner1.png" src="" alt="Slide 1">
+            <img class="slide" data-light="./img/banner1.jpeg" data-dark="./img/dark_banner2.jpeg" src="" alt="Slide 2">
+        </div>
+
+        <div class="headerTxt">
+            <h1 class="placeTxt">Portugal, Europe</h1>
+            <h1 class="hotelNameTxt">Blanc Atlantique Hotel</h1>
+            <p class="subHeaderTxt">unforgettable trip to the Azores</p>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="emblem"><img src="./img/about/sunset.png" alt="emblem"/></div>
+
+        <div class="welTxtBlock">
+            <h1 class="mainTxt">Welcome to the Blanc Atlantique Hotel</h1>
+            <p class="subWelTxt">IN THE HERAT OF PORTO'S, THOUGHT EXCLUSIVELY FOR YOU.</p>
+        </div>
+        <h1 class="line"></h1>
+
+        <div class="aboutUsBlock">
+            <div class="aboutHotelTxtBlock">
+                <p class="aboutHotelTxt">
+                    In 2008, we discovered the ruin that stole our hearts. Some 5 years later, we opened our doors
+                    , brimming with French hospitality and design flair. Re-invigorated and re-imagined
+                    in
+                    2020,
+                    la Maison goes from strength to strength with the opening of our new 2 bedroom private villa with
+                    pool,
+                    Villa Almada.
+                    <br><br>
+                    Our breakfast has become part of Porto and Tripadvisor folklore. Homemade and organic, it changes
+                    daily and is made using the freshest ingredients from Porto’s markets.
+                    <br><br>
+                    Blanc Atlantique hotel in Porto is perfectly situated in the heart of the old town – just a few
+                    minutes’ walk from all the key locations but still set back from the main streets to offer the peace
+                    and tranquillity we are famous for.
+                </p>
+            </div>
+            <div class="imgBlock"><img class="imgBlock" src="./img/about/pic1.jpg" alt="portugal_photo_1"/></div>
+            <div class="imgBlock"><img class="imgBlock" src="./img/about/pic2.jpg" alt="portugal_photo_2"/></div>
+        </div>
+
+    </div>
+
+    <div class="services">
+        <div class="services-wrapper">
+            <h1 class="mainTxt mainServTxt">Services</h1>
+            <div class="servGrid">
+                <p class="servTxt freeWifi">Free wi-fi</p>
+                <p class="servTxt swPool">Swimming pool</p>
+                <p class="servTxt spa">Spa</p>
+                <p class="servTxt breakfast">Breakfast</p>
+                <p class="servTxt  disToOcean">300m from Atlantic Ocean</p>
+                <p class="servTxt locBar">Local Bar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartments" id="rooms">
+
+        <h1 class="apartmentsWelcomeTxt mainTxt">Apartments</h1>
+
+        <div class="apartmentBlock">
+
+            <div class="apartmentInfo">
+                <h1 class="apartName">Garden View Balcony Suites</h1>
+                <p class="apartDescribe">Overlooking our beautiful garden,
+                    our Garden suites offer a large balcony and
+                    floor to ceiling glass windows.</p>
+                <div class="apartmentServices">
+                    <p class="peopleNum apartServTxt">1-2 people</p>
+                    <p class="bathNum apartServTxt">1 full bathroom</p>
+                    <p class="balconyNum apartServTxt">balcony</p>
+                    <p class="coffeeMachine apartServTxt">espresso machine</p>
+
+                </div>
+                <button class="bookBtn" data-type="Garden">BOOK</button>
+            </div>
+
+            <div><img class="apartmentPic" src="./img/apartaments/apartment1.jpg" alt="Garden View apartament" /></div>
+            <div><img class="apartmentPic " src="./img/apartaments/bath1.jpg" alt="Garden View bath"/></div>
+
+        </div>
+
+        <div class="apartmentBlock apartmentBlock2">
+            <div><img class="apartmentPic" src="./img/apartaments/apartment2.jpg" alt="Ocean View apartament" /></div>
+
+            <div><img class="apartmentPic " src="./img/apartaments/bath2.png" alt="Ocean View bath" /></div>
+
+            <div class="apartmentInfo">
+                <h1 class="apartName">Ocean View Balcony Suites</h1>
+                <p class="apartDescribe">The Atlantic Ocean, which is visible from the panoramic windows, greets you
+                    with beautiful waves.</p>
+                <div class="apartmentServices">
+                    <p class="peopleNum apartServTxt">2-3 people</p>
+                    <p class="bathNum apartServTxt">1 full bathroom</p>
+                    <p class="balconyNum apartServTxt">balcony</p>
+                    <p class="coffeeMachine apartServTxt">espresso machine</p>
+
+                </div>
+                <button class="bookBtn" data-type="Ocean">BOOK</button>
+            </div>
+        </div>
+
+        <div class="apartmentBlock">
+
+            <div class="apartmentInfo">
+                <h1 class="apartName">Duplex Garden Retreat Villas</h1>
+                <p class="apartDescribe">Villas are set in the tranquil gardens. Light, private one bedroom duplexes
+                    combine our amazing service in the comfort of a private villa.</p>
+                <div class="apartmentServices">
+                    <p class="peopleNum apartServTxt">2-4 people</p>
+                    <p class="bathNum apartServTxt">2 full bathroom</p>
+                    <p class="balconyNum apartServTxt">2 balcony</p>
+                    <p class="coffeeMachine apartServTxt">espresso machine</p>
+                </div>
+                <button class="bookBtn" data-type="Duplex">BOOK</button>
+            </div>
+
+            <div><img class="apartmentPic" src="./img/apartaments/villa.jpg" alt="Duplex Villa apartament"/></div>
+            <div><img class="apartmentPic " src="./img/apartaments/bath3.jpg" alt="Duplex Villa apartament"/></div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="fBlock">
+            <div class="footerContent">
+                <div class="hotelDescribe">
+                    <h1 class="footerMainTxt">Blanc Atlantique Hotel</h1>
+                    <div><a href="./index.html" class="footerTxt footerA">Home</a></div>
+                    <div><a href="./breakfast.html" class="footerTxt footerA">Breakfast</a></div>
+                    <div><a href="./index.html#rooms" class="footerTxt footerA">Rooms</a></div>
+                    <div><a href="./profile.html" class="footerTxt footerA">Profile</a></div>
+                </div>
+
+                <div class="hotelInfo">
+                    <h1 class="footerContactTxt">Contacts</h1>
+                    <p class="footerTxt">Rua Do Almada 539</p>
+                    <p class="footerTxt">Porto, 4050-039</p>
+                    <p class="footerTxt">+351 225 492 142</p>
+                    <div><a href="#" class="footerTxt facebkRef footerA"> Follow us on Facebook</a></div>
+                    <div><a href="#" class="footerTxt instRef footerA"> Follow us on Instagram</a></div>
+                </div>
+            </div>
+            <p class="underFooterTxt">Blanc Atlantique hotel is a part of the Espais Roca family.<br>
+                Top-rated on Tripadvisor and Lonely Planet, famous for outstanding comfort & design, great breakfast,
+                and
+                hospitality.
+                <br><br>© Blanc Atl 2023
+            </p>
+        </div>
+    </div>
+
+    <script src="./js/auth.js"></script>
+    <script>
+        // Обработка кнопок BOOK на index.html
+        document.querySelectorAll('.bookBtn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const current = window.auth.getCurrent();
+                if (!current) {
+                    location.href = 'profile.html';
+                } else {
+                    const type = btn.dataset.type;
+                    location.href = `booking.html?type=${type}`;
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.getElementById('burger');
+            const menu = document.getElementById('nav-menu');
+
+            burger.addEventListener('click', () => {
+                menu.classList.toggle('active');
+                burger.classList.toggle('active');
+            });
+        });
+    </script>
+    <script>
+        (function () {
+            const toggleBtn = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const storedTheme = localStorage.getItem('theme') || 'light';
+
+            // Установить сохранённую тему
+            document.body.classList.toggle('dark', storedTheme === 'dark');
+            themeIcon.src = storedTheme === 'dark' ? './img/header/moon.png' : './img/header/sun.png';
+            themeIcon.alt = storedTheme === 'dark' ? 'Dark mode' : 'Light mode';
+
+            toggleBtn.addEventListener('click', () => {
+                const isDark = document.body.classList.toggle('dark');
+                // Меняем иконку
+                themeIcon.src = isDark ? './img/header/moon.png' : './img/header/sun.png';
+                themeIcon.alt = isDark ? 'Dark mode' : 'Light mode';
+                // Запомним выбор
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            });
+        })();
+    </script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>

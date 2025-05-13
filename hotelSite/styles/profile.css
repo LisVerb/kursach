@@ -1,0 +1,207 @@
+/* Скрытие */
+.hidden {
+    display: none;
+}
+
+.profile-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 695px;
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url(../img/banner.png);
+}
+
+/* Форма авторизации и профиль */
+.profile-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 50px auto;
+    text-align: center;
+    font-family: "QuickSand", sans-serif;
+}
+
+.profile-container form {
+    max-width: 400px;
+    background: #00033b13;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.underform_txt {
+    color: #fffcfb;
+    font-size: 18px;
+}
+
+.profile-container a {
+    font-family: "QuickSand", sans-serif;
+}
+
+.profile-container input,
+.profile-container button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.profile-container button {
+    background-color: #004080;
+    color: white;
+}
+
+.profile-container button:hover {
+    background-color: #00499d;
+}
+
+.profile-container input:focus {
+    outline: none;
+}
+
+#profile-view {
+    background-color: #0000001f;
+    width: 60vw;
+    padding: 30px;
+    border-radius: 15px;
+    align-items: start;
+    font-family: "QuickSand", sans-serif;
+    backdrop-filter: blur(2px);
+}
+
+#profile-view h3 {
+    margin: 0 0 40px 0;
+    text-align: center;
+    color: #00499d;
+}
+
+#profile-view h2 {
+    color: #ffffff;
+}
+
+#profile-view ul {
+    margin: 40px 0;
+}
+
+#profile-view div {
+    width: 100%;
+    display: flex;
+}
+
+#logout-btn {
+    width: fit-content;
+    padding: 7px 10px;
+    background-color: #00499d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Стили для таблицы бронирований */
+#bookings-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    font-family: "QuickSand", sans-serif;
+}
+
+#bookings-table th,
+#bookings-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+#bookings-table th {
+    background-color: #00499d;
+    color: #fff;
+    font-weight: 600;
+}
+
+#bookings-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#bookings-table button.cancel-btn {
+    padding: 6px 12px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#bookings-table button.cancel-btn:hover {
+    background-color: #c9302c;
+}
+
+@media (max-width: 768px) {
+
+    #bookings-table table,
+    #bookings-table thead,
+    #bookings-table tbody,
+    #bookings-table th,
+    #bookings-table td,
+    #bookings-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    #bookings-table thead {
+        display: none;
+        /* Скрываем заголовок */
+    }
+
+    #bookings-table tr {
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    #bookings-table td {
+        box-sizing: border-box;
+        text-align: left;
+        padding: 10px;
+        position: relative;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    #bookings-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        top: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+        color: #00499d;
+    }
+
+    #bookings-table td:last-child {
+        border-bottom: none;
+    }
+
+    #bookings-table button.cancel-btn {
+        margin-top: 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+}

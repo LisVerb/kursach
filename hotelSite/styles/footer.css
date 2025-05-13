@@ -1,0 +1,164 @@
+.footer {
+    min-height: 400px;
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.fBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 85%;
+    max-width: 1400px;
+}
+
+.footerContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(132, 132, 132, 0.75);
+}
+
+.hotelDescribe {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footerA {
+    text-decoration: none;
+}
+
+.footerMainTxt {
+    font-size: 24px;
+    font-weight: 500;
+    color: #191919;
+    margin: 0;
+    font-family: "Cardo", serif;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(132, 132, 132, 0.75);
+    margin-bottom: 10px;
+}
+
+.hotelInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 5px;
+}
+
+.footerContactTxt {
+    font-size: 24px;
+    font-weight: 500;
+    color: #191919;
+    margin: 0;
+    font-family: "Cardo", serif;
+}
+
+.footerTxt {
+    font-size: 16px;
+    font-weight: 700;
+    color: #848484;
+    margin: 0;
+    font-family: "QuickSand", sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+}
+
+.facebkRef,
+.instRef {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.facebkRef::before {
+    content: "";
+    background-image: url(../img/footer/facebook.png);
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.instRef::before {
+    content: "";
+    background-image: url(../img/footer/instagram-24.png);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.underFooterTxt {
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #AFAFAF;
+    margin: 0;
+    font-family: "QuickSand", sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* === Адаптив до 768px === */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 0;
+    }
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .hotelDescribe {
+        margin: 0;
+    }
+    .hotelInfo {
+        text-align: center;
+    }
+    .footerMainTxt,
+    .footerContactTxt {
+        font-size: 20px;
+    }
+    .footerTxt {
+        font-size: 14px;
+    }
+}
+
+/* === Адаптив до 380px === */
+@media (max-width: 380px) {
+    .footer {
+        padding: 20px 0;
+    }
+    .fBlock {
+        gap: 15px;
+    }
+    .footerMainTxt,
+    .footerContactTxt {
+        font-size: 18px;
+    }
+    .footerTxt {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+    .facebkRef::before,
+    .instRef::before {
+        width: 18px;
+        height: 18px;
+    }
+    .underFooterTxt {
+        font-size: 10px;
+        padding-top: 15px;
+    }
+}

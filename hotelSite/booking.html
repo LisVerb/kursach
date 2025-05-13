@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link href="./styles/style.css" rel="stylesheet">
+  <link href="./styles/header.css" rel="stylesheet" />
+  <link href="./styles/booking.css" rel="stylesheet" />
+  <link href="./styles/footer.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="navigationPanel">
+    <a href="index.html">
+      <img class="dolphinImg" src="./img/dolphins.png" alt="Logo">
+    </a>
+
+    <!-- кнопка-бургер -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- навигация -->
+    <nav class="headerLinks" id="nav-menu">
+      <a href="./index.html">HOME</a>
+      <a href="./breakfast.html">BREAKFAST</a>
+      <a href="./index.html#rooms">ROOMS</a>
+      <a href="profile.html">PROFILE</a>
+    </nav>
+  </div>
+
+  <header class="booking-page">
+
+    <main class="booking-wrapper">
+      <form id="dates-form">
+        <h2>Шаг 1: Выберите даты и тип номера</h2>
+        <label>Дата заезда: <input type="date" id="arrive-date" required></label>
+        <label>Дата выезда: <input type="date" id="leave-date" required></label>
+        <label>Тип номера:
+          <select id="room-type"></select>
+        </label>
+        <div class="booking_buttons_panel">
+          <button type="submit">Далее</button>
+        </div>
+      </form>
+
+      <form id="payment-form" class="hidden">
+        <h2>Шаг 2: Оплата</h2>
+        <label>Итоговая сумма:
+          <input type="text" id="total-price" readonly>
+        </label>
+        <input type="text" id="card-number" maxlength="16" placeholder="Номер карты" required>
+        <input type="text" id="card-cvv" maxlength="3" placeholder="CVV" required>
+        <input type="month" id="card-expiry" required>
+        <div class="booking_buttons_panel">
+          <button type="button" id="back-btn">Назад</button>
+          <button type="submit">Подтвердить бронь</button>
+        </div>
+      </form>
+    </main>
+  </header>
+
+
+
+
+  <div class="footer">
+    <div class="fBlock">
+      <div class="footerContent">
+        <div class="hotelDescribe">
+          <h1 class="footerMainTxt">Blanc Atlantique Hotel</h1>
+          <div><a href="./index.html" class="footerTxt footerA">Home</a></div>
+          <div><a href="./breakfast.html" class="footerTxt footerA">Breakfast</a></div>
+          <div><a href="./index.html#rooms" class="footerTxt footerA">Rooms</a></div>
+          <div><a href="./profile.html" class="footerTxt footerA">Profile</a></div>
+        </div>
+
+        <div class="hotelInfo">
+          <h1 class="footerContactTxt">Contacts</h1>
+          <p class="footerTxt">Rua Do Almada 539</p>
+          <p class="footerTxt">Porto, 4050-039</p>
+          <p class="footerTxt">+351 225 492 142</p>
+          <div><a href="#" class="footerTxt facebkRef footerA"> Follow us on Facebook</a></div>
+          <div><a href="#" class="footerTxt instRef footerA"> Follow us on Instagram</a></div>
+        </div>
+      </div>
+      <p class="underFooterTxt">Blanc Atlantique hotel is a part of the Espais Roca family.<br>
+        Top-rated on Tripadvisor and Lonely Planet, famous for outstanding comfort & design, great breakfast,
+        and
+        hospitality.
+        <br><br>© Blanc Atl 2023
+      </p>
+    </div>
+  </div>
+
+  <script src="./js/auth.js"></script>
+  <script src="./js/booking.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.getElementById('burger');
+      const menu = document.getElementById('nav-menu');
+
+      burger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        burger.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+
+</html>

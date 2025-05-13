@@ -1,0 +1,379 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.breakfast_header {
+    width: 100%;
+    height: 400px;
+    background-image: url("https://cantodeluz.com/wp-content/uploads/2019/12/breakfast-hero.jpg");
+    background-size: cover !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+
+.restaurantDescribe {
+    width: 100%;
+    min-height: 880px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 67px;
+}
+
+.br-describeMainTxt {
+    font-size: 46px;
+    font-weight: 400;
+    color: black;
+    margin: 0px;
+    margin-top: 60px;
+    font-family: "Cardo", serif;
+    text-align: center;
+    line-height: 67px;
+}
+
+.describeBlock {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.organicPic {
+    background-image: url(../img/breakfast/organic.jpg);
+    border-radius: 20px;
+    height: 560px;
+    min-width: 610px;
+}
+
+.orgFoodTxt {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    color: #848484;
+    margin: 0px;
+    font-family: "QuickSand";
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+.br-headerTxt {
+    justify-self: center;
+    font-family: "Cardo", serif;
+    text-align: center;
+}
+
+.br-headerSubTxt {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    letter-spacing: 0.1px;
+}
+
+.br-headerMainTxt {
+    font-size: 64px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+
+.menuGrid {
+    width: 1260px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    column-gap: 40px;
+    margin-bottom: 100px;
+}
+
+.mealBlock {
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.mealPhoto {
+    border-radius: 20px;
+    height: 230px;
+    width: 230px;
+}
+
+.mealInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.namePlusPriceTxt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mealName {
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    font-family: "QuickSand";
+}
+
+.price {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(15, 78, 180);
+    margin: 0px;
+    font-family: "QuickSand";
+}
+
+.mealDescribe {
+    font-size: 16px;
+    font-weight: 700;
+    color: #848484;
+    margin: 0px;
+    font-family: "QuickSand";
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+@media all and (max-width: 1350px) {
+    .menuGrid {
+        width: 1060px;
+    }
+
+    .mealPhoto {
+        height: 210px;
+        width: 210px;
+    }
+
+    .mealName {
+        font-size: 33px;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        margin: 0px;
+    }
+
+    .price {
+        font-size: 25px;
+        font-weight: 700;
+        color: rgb(15, 78, 180);
+        margin: 0px;
+    }
+
+    .mealDescribe {
+        font-size: 14px;
+        font-weight: 700;
+        color: #848484;
+        margin: 0px;
+    }
+}
+
+@media all and (max-width: 1150px) {
+    .menuGrid {
+        width: 960px;
+    }
+
+    .mealPhoto {
+        height: 190px;
+        width: 190px;
+    }
+
+    .mealName {
+        font-size: 31px;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        margin: 0px;
+    }
+
+    .price {
+        font-size: 23px;
+        font-weight: 700;
+        color: rgb(15, 78, 180);
+        margin: 0px;
+    }
+
+    .mealDescribe {
+        font-size: 12px;
+        font-weight: 700;
+        color: #848484;
+        margin: 0px;
+    }
+}
+
+@media all and (max-width: 1040px) {
+    .menuGrid {
+        width: 85%;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+
+    .mealPhoto {
+        height: 250px;
+        width: 250px;
+    }
+
+    .mealName {
+        font-size: 34px;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        margin: 0px;
+    }
+
+    .price {
+        font-size: 27px;
+        font-weight: 700;
+        color: rgb(15, 78, 180);
+        margin: 0px;
+    }
+
+    .mealDescribe {
+        font-size: 15px;
+        font-weight: 700;
+        color: #848484;
+        margin: 0px;
+    }
+}
+
+@media all and (max-width: 730px) {
+    .mealPhoto {
+        height: 210px;
+        width: 210px;
+    }
+
+    .mealName {
+        font-size: 33px;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        margin: 0px;
+    }
+
+    .price {
+        font-size: 23px;
+        font-weight: 700;
+        color: rgb(15, 78, 180);
+        margin: 0px;
+    }
+
+    .mealDescribe {
+        font-size: 15px;
+        font-weight: 700;
+        color: #848484;
+        margin: 0px;
+    }
+}
+
+@media all and (max-width: 630px) {
+    .mealPhoto {
+        height: 190px;
+        width: 190px;
+    }
+
+    .namePlusPriceTxt {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mealName {
+        font-size: 32px;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        margin: 0px;
+    }
+
+    .price {
+        font-size: 20px;
+        font-weight: 700;
+        color: rgb(15, 78, 180);
+        margin: 0px;
+    }
+
+    .mealDescribe {
+        font-size: 14px;
+        font-weight: 700;
+        color: #848484;
+        margin: 0px;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .header {
+        background-size: 100%;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .describeBlock {
+        flex-wrap: wrap;
+        align-items: start;
+    }
+
+    .orgFoodTxt {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .br-describeMainTxt {
+        font-size: 38px;
+        font-weight: 400;
+        color: black;
+        margin: 0px;
+        margin-top: 60px;
+    }
+
+    .headerLinks {
+        margin-right: 0px;
+    }
+
+    a {
+        font-size: 16px;
+        font-weight: 300;
+        color: rgb(0, 0, 0);
+        margin: 0px;
+    }
+
+    .br-headerSubTxt {
+        font-size: 14px;
+        font-weight: normal;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+    }
+
+    .br-headerMainTxt {
+        font-size: 59px;
+        font-weight: 200;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .br-describeMainTxt {
+        font-size: 34px;
+        font-weight: 400;
+        color: black;
+        margin: 0px;
+        margin-top: 60px;
+    }
+}

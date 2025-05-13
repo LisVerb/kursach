@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "QuickSand";
+    src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf) format("truetype");
+}
+
+.apartments {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+
+.apartmentsWelcomeTxt {
+    margin: 40px 0;
+}
+
+.apartmentBlock,
+.apartmentBlock2 {
+    width: 85%;
+    display: grid;
+    gap: 30px;
+    margin-bottom: 150px;
+    grid-template-columns: 1fr 0.8fr 0.8fr;
+}
+
+.apartmentBlock2 {
+    grid-template-columns: 0.8fr 0.8fr 1fr;
+}
+
+.apartmentInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.apartName {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Cardo", serif;
+    color: #191919;
+    margin: 0;
+}
+
+.apartDescribe {
+    font-size: 16px;
+    font-weight: 700;
+    color: #848484;
+    font-family: "QuickSand", sans-serif;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.apartmentServices {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+.apartServTxt {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "QuickSand", sans-serif;
+    color: #000;
+    margin: 0;
+}
+
+.apartServTxt::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.peopleNum::before {
+    background-image: url(../img/apartaments/icons/persons.png);
+    height: 30px;
+}
+
+.bathNum::before {
+    background-image: url(../img/apartaments/icons/bathtub.png);
+}
+
+.balconyNum::before {
+    background-image: url(../img/apartaments/icons/balcony.png);
+}
+
+.coffeeMachine::before {
+    background-image: url(../img/apartaments/icons/coffee_maker.png);
+}
+
+.apartmentPic {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.bookBtn {
+    margin-top: 20px;
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "QuickSand", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bookBtn:hover {
+    background-color: #002c5e;
+}
+/* Кнопка BOOK */
+.bookBtn {
+    font-family: "QuickSand", sans-serif;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bookBtn:hover {
+    background-color: #002c5e;
+}
+
+/* Адаптив */
+@media (max-width: 1080px) {
+
+    .apartmentBlock,
+    .apartmentBlock2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        margin-bottom: 60px;
+    }
+
+    .apartmentInfo {
+        grid-column: 1 / span 2;
+    }
+
+    .apartName {
+        font-size: 35px;
+    }
+
+    .apartServTxt {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 750px) {
+    .apartName {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .apartmentBlock,
+    .apartmentBlock2 {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+    }
+
+    .apartmentBlock2 {
+        flex-direction: column-reverse;
+    }
+}

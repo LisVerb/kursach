@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "QuickSand";
+    src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+
+
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* HEADER */
+body.dark .header {
+    background-image: url(../img/banner-dark.png),
+        /* если есть альтернативный баннер */
+        var(--header-bg-fallback, rgba(0, 0, 0, 0.8));
+    background-blend-mode: overlay;
+}
+
+body.dark .navigationPanel {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+body.dark .headerLinks a {
+    color: #ddd;
+}
+
+body.dark .headerLinks a:hover {
+    color: #fff;
+}
+
+body.dark .burger span {
+    background: #ddd;
+}
+
+body.dark .headerTxt .placeTxt,
+body.dark .headerTxt .hotelNameTxt,
+body.dark .headerTxt .subHeaderTxt {
+    color: #fff;
+}
+
+/* MAIN */
+body.dark .main {
+    background-color: #181818;
+}
+
+body.dark .subWelTxt,
+body.dark .mainTxt {
+    color: white;
+}
+
+/* ABOUT US */
+body.dark .aboutHotelTxt {
+    color: #bbb;
+}
+
+body.dark .aboutUsBlock {
+    background-color: transparent;
+}
+
+/* SERVICES */
+
+body.dark .servTxt {
+    color: #e0e0e0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    height: 70px;
+}
+
+/* APARTMENTS */
+body.dark .apartments {
+    background-color: #1e1e1e;
+}
+
+body.dark .apartName,
+body.dark .apartDescribe,
+body.dark .apartServTxt {
+    color: #ddd;
+}
+
+body.dark .bookBtn {
+    background-color: #312affb8;
+    color: #dce8ff;
+}
+
+body.dark .bookBtn:hover {
+    background-color: #312aff8e;
+}
+
+/* FOOTER */
+body.dark .footer {
+    background-color: #1a1a1a;
+}
+
+body.dark .footerMainTxt,
+body.dark .footerContactTxt {
+    color: #fff;
+}
+
+body.dark .footerTxt {
+    color: #aaa;
+}
+
+body.dark .footerContent {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark .underFooterTxt {
+    color: #777;
+}
+
+/* TABLE IN PROFILE (если есть на главной) */
+body.dark #bookings-table table {
+    background-color: #1e1e1e;
+}
+
+body.dark #bookings-table th {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+body.dark #bookings-table td {
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #ddd;
+}
+
+body.dark .cancel-btn {
+    background-color: #cf6679;
+}
+
+body.dark .cancel-btn:hover {
+    background-color: #b04863;
+}

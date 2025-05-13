@@ -1,0 +1,130 @@
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welTxtBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.emblem {
+    margin-top: 70px;
+}
+.mainTxt {
+    font-size: clamp(28px, 5vw, 50px);
+    font-weight: 400;
+    color: #191919;
+    margin: 0;
+    font-family: "Cardo", serif;
+}
+
+.subWelTxt {
+    font-size: clamp(12px, 2vw, 15px);
+    font-weight: 300;
+    color: #1c1c1c;
+    margin: 0;
+    font-family: "Cardo", serif;
+}
+
+.line {
+    width: 15%;
+    max-width: 215px;
+    height: 2px;
+    border-bottom: 2px solid rgb(70, 163, 186);
+    margin-bottom: 60px;
+}
+.aboutUsBlock {
+    width: 90%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin-top: 70px;
+    padding: 10px;
+}
+
+.aboutHotelTxtBlock {
+    display: flex;
+    align-items: center;
+}
+
+.aboutHotelTxt {
+    font-size: 16px;
+    font-weight: 700;
+    color: #848484;
+    font-family: "QuickSand", sans-serif;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.imgBlock {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+    .aboutUsBlock {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .aboutHotelTxtBlock {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutUsBlock {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .imgBlock {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+    }
+
+    .aboutHotelTxt {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .line {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutHotelTxt {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .line {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@font-face {
+    font-family: "QuickSand";
+    src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

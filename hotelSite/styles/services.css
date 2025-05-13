@@ -1,0 +1,114 @@
+.services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.services-wrapper {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Заголовок блока */
+.mainServTxt {
+    margin-top: 70px;
+}
+
+/* Сетка с услугами */
+.servGrid {
+    width: 85%;
+    margin: 50px 0 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* по умолчанию 3 */
+    gap: 20px;
+}
+
+/* Текст услуг */
+.servTxt {
+    max-width: 350px;
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+    font-family: "QuickSand", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin: 0;
+    padding: 15px;
+}
+
+/* Общие иконки */
+.servTxt::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Индивидуальные иконки */
+.freeWifi::before {
+    background-image: url(../img/servicesIcns/wifi.png);
+}
+
+.swPool::before {
+    background-image: url(../img/servicesIcns/pool.png);
+}
+
+.spa::before {
+    background-image: url(../img/servicesIcns/spa.png);
+}
+
+.breakfast::before {
+    background-image: url(../img/servicesIcns/breakfast.png);
+}
+
+.disToOcean::before {
+    background-image: url(../img/servicesIcns/ocean.png);
+}
+
+.locBar::before {
+    background-image: url(../img/servicesIcns/local_bar.png);
+}
+
+/* Адаптивность */
+@media (max-width: 1000px) {
+    .servGrid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 колонки */
+    }
+}
+
+@media (max-width: 600px) {
+    .servGrid {
+        grid-template-columns: 1fr;
+        /* 1 колонка */
+    }
+}
+
+@media (max-width: 750px) {
+    .servTxt {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 635px) {
+    .servTxt {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 510px) {
+    .servTxt {
+        font-size: 12px;
+        font-weight: 800;
+    }
+}
